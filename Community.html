@@ -35,8 +35,46 @@
             <h2 class="page-title">커뮤니티</h2>
             <div class="divider-line"></div>
 
+            <div class="board-wrapper">
+                <table class="community-board">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody id="board-body">
+
+                    </tbody>
+                </table>
+
+                <div class="pagination" id="pagination">
+                    <a href="#">«</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">»</a>
+                </div>
+
+                <div class="write-btn-box">
+                    <a href="Write.html" class="write-btn">글쓰기</a>
+                </div>
+
+                <div id="postModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 id="modal-title"></h2>
+                        <p class="meta" id="modal-meta"></p>
+                        <div id="modal-content-text"></div>
+                        <button id="deleteBtn">삭제</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
+
 
     <button id="topBtn" title="맨 위로">↑</button>
     <footer>
@@ -48,6 +86,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/Community.js"></script>
 </body>
 
 </html>
